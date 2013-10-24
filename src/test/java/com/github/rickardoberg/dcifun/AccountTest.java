@@ -10,11 +10,10 @@ import static org.junit.Assert.assertThat;
 /**
  * Test Account
  */
-public class AccountTest
-{
+public class AccountTest {
+
     @Test
-    public void testDeposit()
-    {
+    public void testDeposit() {
         Account acct = new Account(100);
 
         Function<Account, Function<Integer, Account>> fn = Account.deposit();
@@ -25,8 +24,7 @@ public class AccountTest
     }
 
     @Test
-    public void testWithdraw()
-    {
+    public void testWithdraw() {
         Account acct = new Account(100);
 
         Function<Account, Function<Integer, Account>> fn = Account.withdraw();
