@@ -9,7 +9,7 @@ import java.util.function.Function;
  */
 public class Account {
 
-    private int balance;
+    private final int balance;
 
     public Account(int balance) {
         this.balance = balance;

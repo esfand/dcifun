@@ -14,8 +14,8 @@ public class MoneyTransferTest {
 
     @Test
     public void testTransfer() {
-        Account from = new Account(100);
-        Account to   = new Account(0);
+        Account from                = new Account(100);
+        Account to                  = new Account(0);
         MoneyTransfer moneyTransfer = new MoneyTransfer(from, to);
 
         // Get bind function

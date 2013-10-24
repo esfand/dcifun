@@ -14,12 +14,12 @@ import static com.github.rickardoberg.dcifun.Account.withdraw;
  */
 public class MoneyTransfer {
 
-    private Account from;
-    private Account to;
+    private final Account from;
+    private final Account to;
 
     public MoneyTransfer(Account from, Account to) {
         this.from = from;
-        this.to = to;
+        this.to   = to;
     }
 
     public Account getFrom() {
